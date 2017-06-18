@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Fun With Giphy</title>
+
+    <!-- Bootswatch Styling for Improving the Aesthetics -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/flatly/bootstrap.min.css">
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style type="text/css">
+        .well {
+            display: inline-block;
+        }
+        .well > img.still {
+            display: inline;
+        }
+        .well > img.animated {
+            display: none;
+        }
+
+        .well.animated > img.still {
+            display: none;
+        }
+        .well.animated > img.animated {
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+<div id="btns-appear-here" class="btn-toolbar" role="group"></div>
+
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="form-group">
+            <form id="movie-form" action="#">
+                <label for="gif-input">Search for gifs</label>
+                <input type="text" id="gif-input">
+                <input id="add-gif" type="button" value="Search for gifs">
+            </form>
+        </div>
+    </div>
+</div>
+
+<div id="gifs-appear-here">
+</div>
+
+<!-- jQuery JS -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Code to the JavaScript File -->
+<script src="app.js"></script>
+
+</body>
+</html>
